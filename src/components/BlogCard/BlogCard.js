@@ -20,11 +20,12 @@ function BlogCard({
       <img
         src={liked ? ImgHeartFilled : ImgHeartUnfilled}
         className="like-image "
+        alt="Likeicon"
         onClick={() => {
           setLiked(!liked);
         }}
       />
-      <img src={image} className="card-image rounded-3 object-fit-cover" />
+      <img src={image} alt="Recipeimg" className="card-image rounded-3 object-fit-cover" />
 
       <h1 className="card-title fs-5 fw-bold text-center mt-2">{title}</h1>
 
@@ -33,7 +34,7 @@ function BlogCard({
       </p>
 
       <div className="time-container d-flex align-items-center position-absolute ">
-        <img src={ImgClock} className="img-clock position-absolute" />
+        <img src={ImgClock} alt="Clockimg" className="img-clock position-absolute" />
         <span className="time ms-4 fw-bold">{time}</span>
       </div> 
       <Link to={`/blog/${id}`}>

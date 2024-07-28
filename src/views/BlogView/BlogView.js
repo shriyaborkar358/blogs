@@ -12,6 +12,7 @@ function BlogView() {
       <h1 className="heading text-center">{selectedData.title}</h1>
       <img
         src={selectedData.image}
+        alt="Recipeimg"
         className="recipe-img mx-auto d-block rounded-3 img-thumbnail mt-1 "
       />
       <div className="duration text-center mt-3 ">{selectedData.up}</div>
@@ -36,7 +37,7 @@ function BlogView() {
         </ul>
 
         <img
-          src={selectedData.ingredientImg}
+          src={selectedData.ingredientImg} alt="Ingredient-img"
           className="ingredient-list rounded-4 my-4  img-thumbnail"
         />
       </div>
