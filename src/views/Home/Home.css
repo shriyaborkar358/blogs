@@ -1,0 +1,9 @@
+.heading{
+    text-align: center;
+}
+
+.blog-card-conatiner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
